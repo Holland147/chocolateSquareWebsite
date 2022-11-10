@@ -1,17 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "./main.css"
+
+
+
+
+const Header = () => {
+  return (
+    <div className='color'>
+      <h1>Chocolate Squares Yummy Yummy</h1>
+    </div>
+  );
+}
+
+const Navbar = () => {
+    return(
+        <div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="">Nutrition</a></li>
+            <li><a href="">kellogs</a></li>
+            <li><a href="p">Help</a></li>
+          </ul>
+    </div>
+    );
+}
+
+const Banner = () => {
+    return (
+       <div >
+          <img src="https://m.media-amazon.com/images/I/61E7sJByiYL._AC_SL1000_.jpg" alt="Chocolate" />
+       </div>
+    );
+ };
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<div><Header /><Navbar /><Banner /></div>);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
