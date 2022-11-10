@@ -1,5 +1,6 @@
 .color{
     text-align: center;
+    background-color: rgb(245, 245, 252);
 }
 
 ul {
@@ -41,7 +42,30 @@ div{
     margin-left: 10px
 }
 
-div.image{
-    width: 50px;; 
-    height:30px;
+.image{
+    width: 200px; 
+    height: 100px;
+    
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+table {
+  width: 500px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
 }
